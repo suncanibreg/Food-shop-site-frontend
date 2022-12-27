@@ -1,0 +1,282 @@
+<!DOCTYPE html>  
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" charset="UTF-8" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping-page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style/home.css">
+    <link rel="stylesheet" href="/style/shop.css" />
+
+  </head>
+  <body>
+    <section id="header">
+      <!-- Navbar -->
+        <div> <!-- navbar-container -->
+          <ul id="navbar">
+            <li><a  href="/pages/home.html">Home page</a></li>
+            <li><a class="active" href="#"></a>Shopping page</li>
+            <li><a href="/pages/our-blog.html">Our Blog</a></li>
+            <li><a href="/pages/about-us.html">About us</a></li>
+            <li><a href="/pages/simply-ask.html">Simply ask</a></li>
+            <li id="miss-bag"><a href="bag.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>          
+          </ul>
+        </div>
+        <div id="mob">
+          <a href="bag.html"><i class="fa-solid fa-bag-shopping"></i></a>
+          <i id="ham-men" class="fas fa-outdent"></i>
+        </div>
+    </section><br /><br /><br /><br />   
+
+<!-- PRODUCTS WITH IMAGE, SHORT DESCRIPTION,
+         PRICE, QUANTITY and FULL DESCRIPTION (with JavaScript) -->
+
+
+  <!-- Flex A for products -->
+    
+    <section  id="fl-A-pr-Centering-cont"> <!-- Ceo Section je Centriran Vodoravno sa margin: auto; -->
+        <!-- Product 1 and his description and quantity --> 
+        <!-- DIV sa id='fl-A-pr-Lefting-cont' je Flex Container za sva 4 Proizvoda tj. <DIV>-a i ravna ih sa
+         LEVIM krajem Sebe tj svog Pravougaonika posto je on Section,tj. Blok Element strane sa
+         @media (min-width: 610px;) {#fl-A-pr-Left-cont {justify content: left;}}
+        Dok sam njega samog tj. Section centrirao jer sam jos pre media query ga podesio
+        sa #fl-A-pr-Left-cont {margino: auto;} -->
+      <div id="fl-A-pr-Lefting-cont">  
+        <div class="fl-A-pr-cont">
+          <div>
+            <img src="/img/Featured products/pexels-suzy-hazelwood-1098592.jpg" alt="some product">
+          </div>
+          <div>
+            <h3>Product name-1</h3>
+            <p>Short overview:</p>
+            <p>Complete description:</p>
+            <h4 class="price">Price: 16 euros</h4><br />
+            <form action="#">
+              <label for="fl-A-pr-1-q-y"> Q-ty: </label>
+              <input id="fl-A-pr-1-q-y" class="fl-A-input-q-ty" type="text" value="1" min="1">
+            </form>        
+          </div>     
+        </div>
+        <!-- Product 2 and his description and quantity -->
+        <div class="fl-A-pr-cont">
+          <div>
+            <img src="/img/Featured products/pexels-na-urchin-2377173.jpg" alt="some product">
+          </div>
+          <div>
+            <h3>Product name-2</h3>
+            <p>Short overview:</p>
+            <p>Complete description:</p>
+            <h4 class="price">Price: 16 euros</h4><br />
+            <form action="#">
+              <label for="fl-A-pr-2-q-ty"> Q-ty: </label>
+              <input id="fl-A-pr-2-q-ty" class="fl-A-input-q-ty" type="text" value="1" min="1">
+            </form>        
+          </div>
+        </div>
+        <!-- Product 3 and his description and quantity -->
+        <div class="fl-A-pr-cont">
+          <div>
+            <img src="/img/Featured products/pexels-dmitry-zvolskiy-1721934.jpg" alt="some product">
+          </div>
+          <div>
+            <h3>Product name-3</h3>
+            <p>Short overview:</p>
+            <p>Complete description:</p>
+            <h4 class="price">Price: 16 euros</h4><br />
+            <form action="#">
+              <label for="fl-A-pr-3-q-ty"> Q-ty: </label>
+              <input id="fl-A-pr-3-q-ty" class="fl-A-input-q-ty" type="text" value="1" min="1">
+            </form>        
+          </div>   
+        </div>
+        <!-- Product 4 and his description and quantity -->
+        <div class="fl-A-pr-cont">
+          <div>
+            <img src="/img/Featured products/pexels-dalila-dalprat-1889651.jpg" alt="some product">
+          </div>
+          <div>
+            <h3>Product name-4</h3>
+            <p>Short overview:</p>
+            <p>Complete description:</p>
+            <h4 class="price">Price: 16 euros</h4><br />
+            <form action="#">
+              <label for="fl-A-pr-4-q-ty"> Q-ty: </label>
+              <input id="fl-A-pr-4-q-ty" class="fl-A-input-q-ty" type="text" value="1" min="1">
+            </form>        
+          </div>  
+        </div>
+      </div>  
+    </section>
+
+  <!-- FLEX B for products -->    
+    <section id="gr-b-pr-cont">
+
+      <!-- Product-1 in Flex B -->
+      <div id="gr-b-pr-1-cont-1-part"><!--1row, 1col on DESKTOP-->
+       <!-- image container and image -->
+        <div class="gr-b-pr-img-cont">
+          <img src="/img/Featured products/pexels-taryn-elliott-4099127.jpg" alt="product-1-gr-b-1">
+        </div>  
+        <!-- full description -->      
+        <div clas="gr-b-pr-full-desc">
+          <p>Full Description - text text text text text text text text  text
+            text text text text text text text text text text text text text
+            text text text text text text text text text text text text text</p>
+        </div>  
+      </div>  
+        <!-- 1 row 2 col short description -->
+      <div id="gr-b-pr-1-short-desc-q-ty">
+          <h3>Product-B-1 name</h3>
+          <p>Short Description - text text text text text text
+            text text text text text text text text text text text text text
+            text text text text text text text text text text text text text
+            text text text text text text text text text text text text text</p>
+          <h4 class="price">Price: 15 euros</h4><br />
+          <form action="#">
+            <label for="gr-b-pr-1-q-ty">Quantity</label>
+            <input class="gr-b-input-q-ty" id="gr-b-pr-1-q-ty" type="number">
+          </form>
+       </div>
+      
+
+      <!-- Product-2 in grid B -->
+      <div id="gr-b-pr-2-cont-1-part"> <!--1row,3 col-->
+        <!-- image container and image -->
+         <div class="gr-b-pr-img-cont">
+           <img src="/img/Featured products/pexels-nestor-cortez-960540.jpg" alt="product-2 of second grid">
+         </div>  
+         <!-- full description -->      
+         <div class="gr-b-pr-full-desc">
+           <p>Full Description - text text text text text text text text  text
+            text text text text text text text text text text text text text
+            text text text text text text text text text text text text text</p>
+         </div>  
+         <!-- short description -->
+      </div>   
+      <div id="gr-b-pr-2-short-desc-q-ty"><!-- 1 row, 4 col -->
+           <h3>Product-B-2 name</h3>
+           <p>Short Description - text text text text text text
+             text text text text text text text text text text text text text
+             text text text text text text text text text text text text text
+             text text text text text text text text text text text text text
+           </p>
+           <h4 class="price">Price: 7 euros</h4><br />
+           <form action="#">
+             <label for="gr-b-pr-2-q-ty">Quantity</label>
+             <input class="gr-b-input-q-ty" id="gr-b-pr-2-q-ty" type="number">
+           </form>
+      </div>
+       
+<!-- Product-3 in grex B -->
+      <div id="gr-b-pr-3-cont-1-part">
+          <!-- image container and image -->
+         <div class="gr-b-pr-img-cont">
+           <img src="/img/Featured products/pexels-erick-mufasa-1414234.jpg" alt="product-3 of grid b">
+         </div>  
+           <!-- full description -->      
+         <div clas="gr-b-pr-full-desc">
+          <p>Full Description - text text text text text text text text  text
+            text text text text text text text text text text text text text
+            text text text text text text text text text text text text text</p>
+         </div> 
+      </div>    
+            <!-- short description -->
+      <div id="gr-b-pr-3-short-desc-q-ty">
+           <h3>Product-B-3 name</h3>
+           <p>Short Description - text text text text text text
+             text text text text text text text text text text text text text
+             text text text text text text text text text text text text text
+             text text text text text text text text text text text text text
+           </p>
+           <h4 class="price">Price: 15 euros</h4><br />
+           <form action="#">
+             <label for="gr-b-pr-3-q-ty">Quantity</label>
+             <input class="gr-b-input-q-ty" id="gr-b-pr-3-q-ty" type="number">
+           </form>
+      </div>
+       
+      <!-- Product-4 in grid B -->
+       <div id="gr-b-pr-4-cont-1 part">
+          <!-- image container and image -->
+          <div class="gr-b-pr-img-cont">
+            <img src="/img/Featured products/pexels-pixabay-45202.jpg" alt="product-4 of grid-b">
+          </div>  
+             <!-- full description -->      
+          <div clas="gr-b-pr-full-desc">
+            <p>Full Description - text text text text text text text text  text
+              text text text text text text text text text text text text text
+              text text text text text text text text text text text text text</p>
+          </div>  
+       </div>   
+             <!-- short description -->
+       <div id="gr-b-pr-4-short-desc-q-ty">
+          <h3>Product-B-4 name</h3>
+          <p>Short Description - text text text text text text
+            text text text text text text text text text text text text text
+            text text text text text text text text text text text text text
+            text text text text text text text text text text text text text
+          </p>
+          <h4 class="price">Price: 15 euros</h4><br />
+          <form action="#">
+            <label for="gr-b-pr-4-q-ty">Quantity</label>
+            <input class="gr-b-input-q-ty" id="gr-b-pr-4-q-ty" type="number">
+          </form>
+       </div>
+
+    </section>
+    
+    <footer class="sect-p1">  
+        <div id="col-bottom">        
+          <div class="col">
+            <h3>About</h3>
+            <a href="#">About us</a>
+            <a href="#">Contact us</a>
+            <a href="#">Shipping</a>
+            <a href="#">Terms & Condition</a>
+            <a href="#">Contact us</a>        
+          </div>
+          <div class="col">
+            <h3>Account</h3>
+            <a>Log in</a>
+            <a>Control my cart</a>
+            <a>Orders</a>
+            <a>Wishes</a>        
+            <a>Need help</a>
+          </div>
+          <div class="col paym">
+            <h4>Take app</h4>
+            <!-- payment images -->
+            <div class="apps">
+              <img src="/img/payment-img/some-play.jpg" alt="">
+              <img src="/img/payment-img/some-app.jpg" alt="">          
+            </div>
+            <p>Safely payment methods</p>
+            <!--
+            <img src="/img/payment/various-paym-cards.png" alt="">
+            -->
+          </div>
+          <div>
+            <h3>Our contact</h3>
+            <p>some State, some street ###, some town</p>
+          </div>
+        </div>
+        <div>      
+          <div class="soc-net">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>     
+            <a href="#"><i class="fab fa-youtube"></i></a>     
+          </div>
+          <div id="copy-right">
+            <p>@ Milan 2022 copyright on eCommerce Website</p>
+          </div>
+        </div>        
+    </footer>
+
+    <script src="/JS/script-home.js"></script>
+  </body>
+</html>
